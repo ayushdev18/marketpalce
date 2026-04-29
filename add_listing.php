@@ -56,6 +56,10 @@ include "config.php";
         <input type="number" name="price" placeholder="price">
         <br><br>
         <button type="submit" name="submit">submit</button>
+
+        <a href="dashboard.php">
+            <button type="button"> Show Listing</button>
+        </a>
     </form>
 </body>
 
