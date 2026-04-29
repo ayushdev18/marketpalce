@@ -10,7 +10,15 @@ include "config.php";
     <title>Document</title>
 </head>
 
-<body>
+<body style=" display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;">
 
     <form action="" method="POST">
         <input type="text" name="name" placeholder="enter your name">

@@ -1,0 +1,143 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+
+#register,
+#login {
+    margin: 10px 0;
+}
+
+#register a,
+#login a {
+    text-decoration: none;
+   
+    padding: 15px 30px;
+    display: inline-block;
+    width: 200px;
+
+    text-align: center;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+   
+}
+
+
+#register a {
+    background-color: #007bff;
+    color: white;
+}
+
+
+#login a {
+    background-color: #28a745;
+    color: white;
+}
+
+#register a:hover {
+    background-color: #0056b3;
+}
+
+#login a:hover {
+    background-color: #218838;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Button Grid Layout */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Common Button Style */
+.dash-btn {
+    text-decoration: none;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1.1rem;
+}
+
+.dash-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+/* Alag-alag colors buttons ke liye */
+.btn-1 {
+    background-color: #4e73df;
+}
+
+/* Blue */
+.btn-2 {
+    background-color: #1cc88a;
+}
+
+/* Green */
+.btn-3 {
+    background-color: #f6c23e;
+}
+
+/* Yellow/Orange */
+.btn-4 {
+    background-color: #36b9cc;
+}
+
+/* Cyan */

@@ -11,7 +11,15 @@ include "config.php";
     <title>Document</title>
 </head>
 
-<body>
+<body style=" display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;">
     <form action="" method="POST">
         <input type="number" name="user_id" placeholder="user id">
         <br><br>
@@ -21,7 +29,12 @@ include "config.php";
         <br><br>
         <input type="textarea" name="detail" placeholder="details">
         <br><br>
-        <input type="text" name="category" placeholder="category">
+        <select name="category" id="city">
+            <option value="IT & Programming">IT & Programming</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Non Tech">Non Tech</option>
+        </select>
+
         <br><br>
         <input type="text" name="subcategory" placeholder="subcategory">
         <br><br>
@@ -29,7 +42,14 @@ include "config.php";
         <br><br>
         <input type="text" name="state" placeholder="state">
         <br><br>
-        <input type="text" name="city" placeholder="city">
+        <select name="city" id="city">
+            <option value="Mohali">Mohali</option>
+            <option value="Chandigrah">Chandigrah</option>
+            <option value="Ambala">Ambala</option>
+            <option value="Sirhind">Sirhind</option>
+            <option value="Ludhiyana">Ludhiyana</option>
+        </select>
+
         <br><br>
         <input type="text" name="area" placeholder="area">
         <br><br>
@@ -51,6 +71,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($conn, $added);
     if ($result) {
         echo "data inserted";
+        header("Location: dashboard.php");
     } else {
         echo "somthing else";
     }
